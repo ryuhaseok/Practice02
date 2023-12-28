@@ -13,20 +13,20 @@ public class Ex21 {
 		
 		int no = sc.nextInt();
 		
-		if (no>0 && no%3 == 0) {
+		if (no<0) {
+			System.out.println("잘못입력하셨습니다.");
+			
+		} else if (no%3 == 0) {
 			System.out.println("A팀입니다.");
 			
-		} else if (no>0 && no%3 == 1) {
+		} else if (no%3 == 1) {
 			System.out.println("B팀입니다.");
 			
-		} else if (no>0 && no%3 == 2) {
+		} else if (no%3 == 2) {
 			System.out.println("C팀입니다.");
 			
-		} else if (no == 0) {
+		} else if (no == 3) {
 			System.out.println("잘못된 사번입니다.");
-			
-		} else {
-			System.out.println("잘못입력하셨습니다.");
 			
 		}
 		
